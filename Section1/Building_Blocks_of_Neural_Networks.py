@@ -23,7 +23,7 @@ class MyNeuralNet(nn.Module):
     def forward(self,x):
         x = F.relu(self.operationOne(x))
         x = self.operationTwo(x)
-        x = F.sigmoid(x)
-        return x
+        output = F.sigmoid(x)
+        return output
 
 
